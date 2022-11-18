@@ -6,7 +6,7 @@ metadata:
     name: hello-pod
 spec:
   containers:
-  - name: myapp
+  - name: first-container
     image: nginx
     resources:
     ports:
