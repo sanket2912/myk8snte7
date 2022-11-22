@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysankuapp-deploy
+  labels:
+    app: mysankuapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mysankuapp
+  template:
+    metadata:
+      labels:
+        app: mysankuapp
+    spec:
+      containers:
+      - name: mysankuapp-container
+        image: sanku291297/myjavaapp21nov:1
+        ports:
+        - containerPort: 8080
