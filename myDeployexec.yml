@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mysankuapp-container
-        image: sanku291297/myjavaapp21nov:1
+        image: sanku291297/myjavaapp21nov:2
         ports:
         - containerPort: 8080
